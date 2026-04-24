@@ -1,41 +1,50 @@
 ============================= test session starts ==============================
 platform linux -- Python 3.14.4, pytest-9.0.3, pluggy-1.6.0
 rootdir: /home/runner/work/Assessment-Fundamentals-Week-2/Assessment-Fundamentals-Week-2
-collected 16 items / 1 error
+collected 24 items
 
-!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
-=============================== 1 error in 0.10s ===============================
+Level-1/test_one_task.py .........                                       [ 37%]
+Level-2/test_two_task.py .......                                         [ 66%]
+Level-3/test_three_task.py ..F.....                                      [100%]
+
+========================= 1 failed, 23 passed in 0.04s =========================
 ************* Module task_one
 Level-1/task_one.py:1:0: C0114: Missing module docstring (missing-module-docstring)
 Level-1/task_one.py:26:4: C0116: Missing function or method docstring (missing-function-docstring)
 Level-1/task_one.py:36:34: W0622: Redefining built-in 'type' (redefined-builtin)
-Level-1/task_one.py:42:11: C0121: Comparison '0 <= self.score <= 100 == False' should be '0 <= self.score <= 100 is False' if checking for the singleton value False, or 'not 0 <= self.score <= 100' if testing for falsiness (singleton-comparison)
 Level-1/task_one.py:33:0: R0903: Too few public methods (0/2) (too-few-public-methods)
 Level-1/task_one.py:2:0: W0611: Unused import dateutil.relativedelta (unused-import)
 ************* Module task_two
 Level-2/task_two.py:1:0: C0114: Missing module docstring (missing-module-docstring)
-Level-2/task_two.py:26:11: C0121: Comparison 'isinstance(assessment, Assessment) == False' should be 'isinstance(assessment, Assessment) is False' if checking for the singleton value False, or 'not isinstance(assessment, Assessment)' if testing for falsiness (singleton-comparison)
-Level-2/task_two.py:31:4: C0116: Missing function or method docstring (missing-function-docstring)
-Level-2/task_two.py:37:4: C0116: Missing function or method docstring (missing-function-docstring)
-Level-2/task_two.py:37:37: W0622: Redefining built-in 'type' (redefined-builtin)
-Level-2/task_two.py:48:34: W0622: Redefining built-in 'type' (redefined-builtin)
-Level-2/task_two.py:54:11: C0121: Comparison '0 <= self.score <= 100 == False' should be '0 <= self.score <= 100 is False' if checking for the singleton value False, or 'not 0 <= self.score <= 100' if testing for falsiness (singleton-comparison)
-Level-2/task_two.py:45:0: R0903: Too few public methods (0/2) (too-few-public-methods)
-Level-2/task_two.py:59:0: R0903: Too few public methods (1/2) (too-few-public-methods)
-Level-2/task_two.py:70:0: R0903: Too few public methods (1/2) (too-few-public-methods)
-Level-2/task_two.py:81:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+Level-2/task_two.py:38:37: W0622: Redefining built-in 'type' (redefined-builtin)
+Level-2/task_two.py:50:34: W0622: Redefining built-in 'type' (redefined-builtin)
+Level-2/task_two.py:47:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+Level-2/task_two.py:61:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+Level-2/task_two.py:72:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+Level-2/task_two.py:83:0: R0903: Too few public methods (1/2) (too-few-public-methods)
 ************* Module task_three
 Level-3/task_three.py:1:0: C0114: Missing module docstring (missing-module-docstring)
-Level-3/task_three.py:17:0: C0115: Missing class docstring (missing-class-docstring)
-Level-3/task_three.py:17:0: R0903: Too few public methods (0/2) (too-few-public-methods)
-Level-3/task_three.py:25:0: C0115: Missing class docstring (missing-class-docstring)
-Level-3/task_three.py:27:23: W0621: Redefining name 'questions' from outer scope (line 41) (redefined-outer-name)
-Level-3/task_three.py:27:51: W0622: Redefining built-in 'type' (redefined-builtin)
-Level-3/task_three.py:25:0: R0903: Too few public methods (0/2) (too-few-public-methods)
-Level-3/task_three.py:33:0: C0115: Missing class docstring (missing-class-docstring)
-Level-3/task_three.py:35:23: W0621: Redefining name 'quiz' from outer scope (line 48) (redefined-outer-name)
-Level-3/task_three.py:33:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+Level-3/task_three.py:6:61: E0602: Undefined variable 'date' (undefined-variable)
+Level-3/task_three.py:14:21: E0602: Undefined variable 'date' (undefined-variable)
+Level-3/task_three.py:36:37: W0622: Redefining built-in 'type' (redefined-builtin)
+Level-3/task_three.py:48:34: W0622: Redefining built-in 'type' (redefined-builtin)
+Level-3/task_three.py:45:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+Level-3/task_three.py:59:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+Level-3/task_three.py:70:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+Level-3/task_three.py:81:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+Level-3/task_three.py:92:0: C0115: Missing class docstring (missing-class-docstring)
+Level-3/task_three.py:92:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+Level-3/task_three.py:100:0: C0115: Missing class docstring (missing-class-docstring)
+Level-3/task_three.py:102:23: W0621: Redefining name 'questions' from outer scope (line 138) (redefined-outer-name)
+Level-3/task_three.py:102:51: W0622: Redefining built-in 'type' (redefined-builtin)
+Level-3/task_three.py:100:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+Level-3/task_three.py:108:0: C0115: Missing class docstring (missing-class-docstring)
+Level-3/task_three.py:110:23: W0621: Redefining name 'quiz' from outer scope (line 145) (redefined-outer-name)
+Level-3/task_three.py:114:4: C0116: Missing function or method docstring (missing-function-docstring)
+Level-3/task_three.py:124:4: C0116: Missing function or method docstring (missing-function-docstring)
+Level-3/task_three.py:126:8: W0622: Redefining built-in 'type' (redefined-builtin)
+Level-3/task_three.py:124:4: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
 
 ------------------------------------------------------------------
-Your code has been rated at 7.67/10 (previous run: 7.67/10, +0.00)
+Your code has been rated at 7.81/10 (previous run: 7.81/10, +0.00)
 
