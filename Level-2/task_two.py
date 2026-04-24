@@ -23,18 +23,20 @@ class Trainee:
 
     def add_assessment(self, assessment: Assessment) -> None:
         ''' Adds an Assessment to the trainee's list of assessments'''
-        if isinstance(assessment, Assessment) == False:
+        if isinstance(assessment, Assessment) is False:
             raise TypeError("Error that is not a valid type of assessment!")
 
         self.assessments.append(assessment)
 
     def get_assessment(self, name: str) -> Assessment | None:
+        '''Returns an assessment by name from a list of assessments'''
         for assessment in self.assessments:
             if name == assessment.name:
                 return assessment
         return None
 
     def get_assessment_of_type(self, type: str) -> list[Assessment]:
+        '''Returns all assessments of the same type from a list of assessments'''
         collated_assessments = []
         for assessment in self.assessments:
             if assessment.type == type:
@@ -51,7 +53,7 @@ class Assessment:
         self.score = score
         if self.type not in ["multiple-choice", "technical", "presentation"]:
             raise ValueError("Error: That is not a valid type of assessment")
-        if (0 <= self.score <= 100) == False:
+        if (0 <= self.score <= 100) is False:
             raise ValueError(
                 "Error: That score is outside the vaild range of 0-100")
 
