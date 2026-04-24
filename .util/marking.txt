@@ -7,7 +7,7 @@ Level-1/test_one_task.py .........                                       [ 37%]
 Level-2/test_two_task.py .......                                         [ 66%]
 Level-3/test_three_task.py ........                                      [100%]
 
-============================== 24 passed in 0.03s ==============================
+============================== 24 passed in 0.04s ==============================
 ************* Module task_one
 Level-1/task_one.py:1:0: C0114: Missing module docstring (missing-module-docstring)
 Level-1/task_one.py:26:4: C0116: Missing function or method docstring (missing-function-docstring)
@@ -24,27 +24,20 @@ Level-2/task_two.py:72:0: R0903: Too few public methods (1/2) (too-few-public-me
 Level-2/task_two.py:83:0: R0903: Too few public methods (1/2) (too-few-public-methods)
 ************* Module task_three
 Level-3/task_three.py:1:0: C0114: Missing module docstring (missing-module-docstring)
-Level-3/task_three.py:6:61: E0602: Undefined variable 'date' (undefined-variable)
-Level-3/task_three.py:14:21: E0602: Undefined variable 'date' (undefined-variable)
-Level-3/task_three.py:36:37: W0622: Redefining built-in 'type' (redefined-builtin)
-Level-3/task_three.py:48:34: W0622: Redefining built-in 'type' (redefined-builtin)
-Level-3/task_three.py:45:0: R0903: Too few public methods (0/2) (too-few-public-methods)
-Level-3/task_three.py:59:0: R0903: Too few public methods (1/2) (too-few-public-methods)
-Level-3/task_three.py:70:0: R0903: Too few public methods (1/2) (too-few-public-methods)
-Level-3/task_three.py:81:0: R0903: Too few public methods (1/2) (too-few-public-methods)
-Level-3/task_three.py:92:0: C0115: Missing class docstring (missing-class-docstring)
-Level-3/task_three.py:92:0: R0903: Too few public methods (0/2) (too-few-public-methods)
-Level-3/task_three.py:100:0: C0115: Missing class docstring (missing-class-docstring)
-Level-3/task_three.py:102:23: W0621: Redefining name 'questions' from outer scope (line 137) (redefined-outer-name)
-Level-3/task_three.py:102:51: W0622: Redefining built-in 'type' (redefined-builtin)
-Level-3/task_three.py:100:0: R0903: Too few public methods (0/2) (too-few-public-methods)
-Level-3/task_three.py:108:0: C0115: Missing class docstring (missing-class-docstring)
-Level-3/task_three.py:110:23: W0621: Redefining name 'quiz' from outer scope (line 144) (redefined-outer-name)
-Level-3/task_three.py:113:4: C0116: Missing function or method docstring (missing-function-docstring)
-Level-3/task_three.py:123:4: C0116: Missing function or method docstring (missing-function-docstring)
-Level-3/task_three.py:125:8: W0622: Redefining built-in 'type' (redefined-builtin)
-Level-3/task_three.py:123:4: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
+Level-3/task_three.py:37:37: W0622: Redefining built-in 'type' (redefined-builtin)
+Level-3/task_three.py:49:34: W0622: Redefining built-in 'type' (redefined-builtin)
+Level-3/task_three.py:46:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+Level-3/task_three.py:60:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+Level-3/task_three.py:71:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+Level-3/task_three.py:82:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+Level-3/task_three.py:93:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+Level-3/task_three.py:105:23: W0621: Redefining name 'questions' from outer scope (line 143) (redefined-outer-name)
+Level-3/task_three.py:105:51: W0622: Redefining built-in 'type' (redefined-builtin)
+Level-3/task_three.py:102:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+Level-3/task_three.py:114:23: W0621: Redefining name 'quiz' from outer scope (line 150) (redefined-outer-name)
+Level-3/task_three.py:131:8: W0622: Redefining built-in 'type' (redefined-builtin)
+Level-3/task_three.py:128:4: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
 
 ------------------------------------------------------------------
-Your code has been rated at 7.80/10 (previous run: 7.80/10, +0.00)
+Your code has been rated at 8.61/10 (previous run: 8.61/10, +0.00)
 
