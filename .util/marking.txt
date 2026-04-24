@@ -5,9 +5,9 @@ collected 24 items
 
 Level-1/test_one_task.py .........                                       [ 37%]
 Level-2/test_two_task.py .......                                         [ 66%]
-Level-3/test_three_task.py ..F.....                                      [100%]
+Level-3/test_three_task.py ........                                      [100%]
 
-========================= 1 failed, 23 passed in 0.04s =========================
+============================== 24 passed in 0.03s ==============================
 ************* Module task_one
 Level-1/task_one.py:1:0: C0114: Missing module docstring (missing-module-docstring)
 Level-1/task_one.py:26:4: C0116: Missing function or method docstring (missing-function-docstring)
@@ -35,16 +35,16 @@ Level-3/task_three.py:81:0: R0903: Too few public methods (1/2) (too-few-public-
 Level-3/task_three.py:92:0: C0115: Missing class docstring (missing-class-docstring)
 Level-3/task_three.py:92:0: R0903: Too few public methods (0/2) (too-few-public-methods)
 Level-3/task_three.py:100:0: C0115: Missing class docstring (missing-class-docstring)
-Level-3/task_three.py:102:23: W0621: Redefining name 'questions' from outer scope (line 138) (redefined-outer-name)
+Level-3/task_three.py:102:23: W0621: Redefining name 'questions' from outer scope (line 137) (redefined-outer-name)
 Level-3/task_three.py:102:51: W0622: Redefining built-in 'type' (redefined-builtin)
 Level-3/task_three.py:100:0: R0903: Too few public methods (0/2) (too-few-public-methods)
 Level-3/task_three.py:108:0: C0115: Missing class docstring (missing-class-docstring)
-Level-3/task_three.py:110:23: W0621: Redefining name 'quiz' from outer scope (line 145) (redefined-outer-name)
-Level-3/task_three.py:114:4: C0116: Missing function or method docstring (missing-function-docstring)
-Level-3/task_three.py:124:4: C0116: Missing function or method docstring (missing-function-docstring)
-Level-3/task_three.py:126:8: W0622: Redefining built-in 'type' (redefined-builtin)
-Level-3/task_three.py:124:4: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
+Level-3/task_three.py:110:23: W0621: Redefining name 'quiz' from outer scope (line 144) (redefined-outer-name)
+Level-3/task_three.py:113:4: C0116: Missing function or method docstring (missing-function-docstring)
+Level-3/task_three.py:123:4: C0116: Missing function or method docstring (missing-function-docstring)
+Level-3/task_three.py:125:8: W0622: Redefining built-in 'type' (redefined-builtin)
+Level-3/task_three.py:123:4: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
 
 ------------------------------------------------------------------
-Your code has been rated at 7.81/10 (previous run: 7.81/10, +0.00)
+Your code has been rated at 7.80/10 (previous run: 7.80/10, +0.00)
 
