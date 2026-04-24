@@ -108,22 +108,21 @@ class Quiz:
 class Marking:
 
     def __init__(self, quiz: Quiz) -> None:
-        self.quiz = quiz
-        _quiz = quiz
+        self._quiz = quiz
 
     def mark(self) -> int:
-        total_score = len(self.quiz.questions)
+        total_score = len(self._quiz.questions)
         obtained_score = 0
-        if len(self.quiz.questions) == 0:
+        if len(self._quiz.questions) == 0:
             return obtained_score
-        for question in self.quiz.questions:
+        for question in self._quiz.questions:
             if question.chosen_answer == question.correct_answer:
                 obtained_score += 1
         return int((obtained_score * 100) / total_score)
 
     def generate_assessment(self) -> Assessment:
-        name = self.quiz.name
-        type = self.quiz.type
+        name = self._quiz.name
+        type = self._quiz.type
         score = self.mark()
         if type == "multiple-choice":
             return MultipleChoiceAssessment(name, score)
