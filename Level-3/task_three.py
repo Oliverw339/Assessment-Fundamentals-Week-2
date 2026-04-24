@@ -1,3 +1,4 @@
+from datetime import date
 
 
 class Trainee:
@@ -90,6 +91,7 @@ class PresentationAssessment(Assessment):
 
 
 class Question:
+    '''A class that represents a question'''
 
     def __init__(self, question: str, chosen_answer: str, correct_answer: str):
         self.question = question
@@ -98,6 +100,7 @@ class Question:
 
 
 class Quiz:
+    '''A class that represents a quiz'''
 
     def __init__(self, questions: list, name: str, type: str):
         self.questions = questions
@@ -106,11 +109,13 @@ class Quiz:
 
 
 class Marking:
+    '''A class that represents marking and has generating assessment capabilities'''
 
     def __init__(self, quiz: Quiz) -> None:
         self._quiz = quiz
 
     def mark(self) -> int:
+        ''' A method that marks quizzes and returns a percentage score'''
         total_score = len(self._quiz.questions)
         obtained_score = 0
         if len(self._quiz.questions) == 0:
@@ -121,6 +126,7 @@ class Marking:
         return int((obtained_score * 100) / total_score)
 
     def generate_assessment(self) -> Assessment:
+        '''A method that turns quizzes into assessments'''
         name = self._quiz.name
         type = self._quiz.type
         score = self.mark()
